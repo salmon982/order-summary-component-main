@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;800;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(224deg 41.66% 73.26% / 31%);
+}
+
+.card {
+  position: relative;
+  background-color: var(--very-pale-blue);
+  border-radius: 1.25em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 77.25%;
+  width: 31.29%;
+  box-shadow: 0 0.5em 2em 0.1em hsla(224, 23%, 55%, 0.253);
+}
+
+.image {
+  position: relative;
+  background-image: url('./images/illustration-hero.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.25em 1.25em 0em 0em;
+  width: 100%;
+  height: 31%;
+}
+
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 69%;
+  padding: 3.25em 3em 2em 3em;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 32%;
+}
+
+.header .title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1.78rem;
+  letter-spacing: -0.03rem;
+}
+
+.header .description {
+  color: var(--desaturated-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.plan-order {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 23%;
+  border-radius: 0.75em;
+  padding: 0 1.65em;
+}
+
+.plan-order .plan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 62%;
+  margin-right: 4.5em;
+  margin-bottom: 0.5em;
+}
+
+.plan-name {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: 1.02rem;
+  letter-spacing: -0.02rem;
+}
+
+.plan-price {
+  color: var(--desaturated-blue);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.change {
+  font-weight: 900;
+  text-decoration: underline;
+  color: var(--bright-blue);
+  font-size: 0.825rem;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 29%;
+}
+
+.buttons button {
+  border: none;
+  font-family: 'Red Hat Display', sans-serif;
+  width: 100%;
+  border-radius: 0.82em;
+  height: 44%;
+  font-weight: 800;
+  font-size: 0.975rem;
+}
+
+.payment {
+  background-color: var(--bright-blue);
+  color: var(--pale-blue);
+  box-shadow: 0 1em 3em 0.5em var(--pale-blue);
+  z-index: 1;
+}
+
+.cancel {
+  background-color: var(--very-pale-blue);
+  color: var(--desaturated-blue);
+}
+
+@media all and (orientation: portrait) and (max-width: 500px) {
+  main {
+    height: 100dvh;
+    background: var(--pale-blue);
+  }
+
+  .card {
+    height: 80%;
+    width: 87%;
+    box-shadow: 0 0.5em 2em 0.1em hsla(224, 23%, 55%, 0.253);
+  }
+
+  .image {
+    width: 100%;
+    height: 28%;
+  }
+
+  .text {
+    width: 100%;
+    height: 72%;
+    padding: 2em 1.5em 1em 1.5em;
+  }
+
+  .header {
+    height: 34%;
+  }
+
+  .header .title {
+    font-size: 1.4rem;
+    letter-spacing: -0.02rem;
+  }
+
+  .header .description {
+    font-size: 0.935rem;
+    line-height: 1.5rem;
+    padding: 0 1em;
+  }
+
+  .icon {
+    margin-left: 1.25em;
+  }
+
+  .plan-order {
+    padding: 0 1em 0 0;
+  }
+
+  .plan-order .plan {
+    margin-right: 2em;
+  }
+
+  .plan-name {
+    font-size: 0.9rem;
+  }
+
+  .plan-price {
+    font-size: 0.85rem;
+  }
+
+  .buttons {
+    height: 30%;
+  }
+
+  .buttons button {
+    border-radius: 0.8em;
+  }
+
+  .payment {
+    height: 45%;
+    box-shadow: 0 1em 0.5em 0.5em var(--pale-blue);
+  }
+
+  .cancel {
+    height: 55%;
+  }
+
+  .payment,
+  .cancel {
+    font-weight: 800;
+    font-size: 0.92rem;
+  }
+}
