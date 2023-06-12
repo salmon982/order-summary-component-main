@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Flexbox Order Summary](https://www.frontendmentor.io/solutions/flexbox-order-summary-6PFC09kbL4)
+- Live Site URL: [Live Site](https://flexbox-order-summary.netlify.app/)
 
 ## My process
 
